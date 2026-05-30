@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最終ロック</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔒 FINAL LOCK</h1>
+
+    <p>集めた8文字のパスワードを入力してください</p>
+
+    <input
+        type="text"
+        id="password"
+        maxlength="8"
+        placeholder="8文字を入力">
+
+    <button onclick="checkPassword()">
+        ロック解除
+    </button>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
