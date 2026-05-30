@@ -63,4 +63,19 @@ button:hover{
     margin-top:20px;
     min-height:30px;
     font-weight:bold;
+    color:#ef4444;
+    animation: shake 0.3s;
+}
+
+@keyframes shake{
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-5px);}
+    50%{transform:translateX(5px);}
+    75%{transform:translateX(-5px);}
+    100%{transform:translateX(0);}
+}
+
+#nextButton{
+    display:none;
+    margin-top:20px;
 }
