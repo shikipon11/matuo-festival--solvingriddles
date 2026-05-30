@@ -39,7 +39,7 @@ else{
         // 入力欄を空にする
             document.getElementById("password").value = "";
 
-        }, 2000); // 2秒後
+        }, 1000); // 2秒後
 
     }    
 }
