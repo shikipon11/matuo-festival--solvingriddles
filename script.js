@@ -11,23 +11,39 @@ function checkPassword() {
     if(input === correctPassword){
 
         message.style.color = "#4ade80";
+
         message.innerHTML =
-        "アクセス認証中...";
+            "アクセス認証中...";
 
         setTimeout(() => {
+
             message.innerHTML =
-            "ロック解除成功";
+                "ロック解除成功";
+
+            document.getElementById("nextButton")
+                .style.display = "block";
+
         },1000);
 
-        setTimeout(() => {
-            window.location.href = "home.html";
-        },2500);
+}
 
     }else{
 
         message.style.color = "#f87171";
-        message.innerHTML =
-        "パスワードが違います";
+        message.innerHTML = "パスワードが違います";
 
-    }
+        setTimeout(() => {
+
+        // メッセージを消す
+            message.innerHTML = "";
+
+        // 入力欄を空にする
+            document.getElementById("password").value = "";
+
+        }, 2000); // 2秒後
+
+    }    
+}
+function goNext(){
+    window.location.href = "home.html";
 }
