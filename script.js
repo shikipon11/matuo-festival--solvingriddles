@@ -26,8 +26,7 @@ function checkPassword() {
         },1000);
 
 }
-
-    }else{
+else{
 
         message.style.color = "#f87171";
         message.innerHTML = "パスワードが違います";
