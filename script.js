@@ -44,5 +44,5 @@ else{
     }    
 }
 function goNext(){
-    window.location.href = "home.html";
+    window.location.href = "https://sites.google.com/view/matsuofes69/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=2";
 }
