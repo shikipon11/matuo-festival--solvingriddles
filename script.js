@@ -1,4 +1,4 @@
-const correctPassword = "ABCDEFGH"; // ←ここを謎解きの答えに変更
+const correctPassword = "matsuo69"; // ←ここを謎解きの答えに変更
 
 function checkPassword() {
 
