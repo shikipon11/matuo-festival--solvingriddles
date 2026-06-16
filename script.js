@@ -7,24 +7,24 @@ function checkPassword() {
 
     const message =
         document.getElementById("message");
+if(input === correctPassword){
 
-    if(input === correctPassword){
+    message.style.color = "#4ade80";
+    message.innerHTML = "アクセス認証中...";
 
-        message.style.color = "#4ade80";
+    setTimeout(() => {
 
-        message.innerHTML =
-            "アクセス認証中...";
+        message.innerHTML = "ロック解除成功";
 
-        setTimeout(() => {
+        // ロック解除ボタンを非表示
+        document.querySelector("button[onclick='checkPassword()']")
+            .style.display = "none";
 
-            message.innerHTML =
-                "ロック解除成功";
+        // 次へ進むボタンを表示
+        document.getElementById("nextButton")
+            .style.display = "block";
 
-            document.getElementById("nextButton")
-                .style.display = "block";
-
-        },1000);
-
+    },1000);
 }
 else{
 
