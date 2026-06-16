@@ -21,7 +21,7 @@ function checkPassword() {
             // ボタンを押したときの処理を変更
             button.onclick = goNext;
 
-        }, 1000);
+        }, 3000);
 
     } else {
 
@@ -31,7 +31,7 @@ function checkPassword() {
         setTimeout(() => {
             message.innerHTML = "";
             document.getElementById("password").value = "";
-        }, 1000);
+        }, 3000);
     }
 }
 
