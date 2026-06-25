@@ -1,4 +1,4 @@
-const correctPassword = "matsuo69";
+const correctPassword = "6mas94ty";
 
 function checkPassword() {
 
